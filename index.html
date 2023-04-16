@@ -12,15 +12,28 @@
     <script>
         
        function multiplicationTable(num){
+            // check if the given number is an integer number
+            if(num === parseInt(num)){
 
-            for(let i=1; i<=10; i++){
+                for(let i=1; i<=10; i++){
               
-                console.log(num+" x "+ i + " = "+ num*i );
+                    console.log(num+" x "+ i + " = "+ num*i );
+                }
+                    console.log("\n");
+            }else{
+                console.log("Please provide an integer number");
             }
 
-        }
 
+           
+
+        }
+        // test functions with different values
         multiplicationTable(15);
+        multiplicationTable(18);
+        multiplicationTable(7)
+        // check with floats value
+        multiplicationTable(25.5);
 
     </script>
 
